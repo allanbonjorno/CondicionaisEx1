@@ -1,2 +1,42 @@
-# CondicionaisEx1
-Exemplo 1. Condicionais 
+# Calculadora
+Exemplo 1. 
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia op
+		real n1, n2, res
+		escreva("\n", "Qual a Operação?", "\n", "Adição(+)", "\n", "Subtração(-)", "\n", "Divisão(/)","\n", "Multiplicação(*)","\n")
+		leia(op)
+		limpa()
+		escreva("Digite um valor: ")
+		leia(n1)
+		limpa()
+		escreva("Digite um valor: ")
+		leia(n2)
+		limpa()
+		se(op=="+")
+		{
+			res = n1+n2
+		}
+		senao se(op=="-")
+		{
+			res = n1-n2
+		}
+		senao se(op=="/")
+		{
+			res = n1/n2 
+		}
+		senao se(op=="*")
+		{
+			res = n1*n2
+		}
+		senao
+		{
+			res = 0.0
+		}
+		escreva(" Resultado: \n ", n1, " ", op, " ", n2, "=", res)
+		}
+}
+
