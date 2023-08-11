@@ -1,0 +1,38 @@
+    var
+        vetor: vetor[1..10] de inteiro
+        soma, i: inteiro
+        media: real
+
+    // Leitura dos valores no vetor
+    para i de 1 ate 10 faca
+        escreva("Digite o valor ", i, ": ")
+        leia(vetor[i])
+    fimpara
+
+    // Saída de elementos nos índices ímpares
+    escreva("Elementos nos índices ímpares: ")
+    para i de 1 ate 10 passo 2 faca
+        escreva(vetor[i], " ")
+    fimpara
+    escreval()
+
+    // Saída de elementos pares
+    escreva("Elementos pares: ")
+    para i de 1 ate 10 faca
+        se vetor[i] % 2 == 0 entao
+            escreva(vetor[i], " ")
+        fimse
+    fimpara
+    escreval()
+
+    // Cálculo da soma de todos os elementos
+    soma <- 0
+    para i de 1 ate 10 faca
+        soma <- soma + vetor[i]
+    fimpara
+    escreva("Soma: ", soma)
+    escreval()
+
+    // Cálculo da média
+    media <- soma / 10
+    escreva("Média: ", media)
